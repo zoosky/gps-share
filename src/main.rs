@@ -23,8 +23,12 @@
 
 mod gps;
 mod server;
+mod avahi;
 
 extern crate serial;
+extern crate dbus;
+#[macro_use]
+extern crate dbus_macros;
 
 use gps::GPS;
 use server::Server;
